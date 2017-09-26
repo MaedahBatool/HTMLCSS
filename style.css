@@ -1,0 +1,67 @@
+/**
+ * Stylesheet.
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+	background: pink;
+	padding: 5rem;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+
+a:hover {
+	border-bottom: 1px solid;
+}
+
+.nav {
+	display: table;
+	width: 100%;
+	background: green;
+	margin: 0;
+	padding: 5rem;
+	table-layout: fixed;
+}
+
+.nav > li {
+	display: table-cell;
+	/*width: 10%;*/
+	background: orange;
+	border: 1px solid;
+	padding: 2rem;
+	position: relative;
+}
+
+.nav > li > ul {
+	position: absolute;
+	width: 100%;
+	background: orangered;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	top: 100%;
+	left: 0;
+	border: 1px solid;
+	display: none;
+}
+
+.nav > li:hover ul {
+	display: block;
+}
+
+.nav li ul li {
+	border: 1px solid;
+	padding: 2rem;
+}
