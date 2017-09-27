@@ -1,5 +1,5 @@
 /**
- * Stylesheet.
+ * CSS Styles for the Navigation Menu
  */
 
 * {
@@ -12,56 +12,70 @@ html {
 
 body {
 	font-size: 2rem;
-	background: pink;
+	background-color: orange;
 	padding: 5rem;
+	color: #444;
 }
 
 a {
+	color: #444;
 	text-decoration: none;
-	text-transform: uppercase;
-	color: #000;
+	cursor: pointer;
 }
 
 a:hover {
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #444;
+	cursor: pointer !important;
 }
 
 .nav {
 	display: table;
 	width: 100%;
-	background: green;
-	margin: 0;
 	padding: 5rem;
+	margin: 0;
+	background: orangered;
 	table-layout: fixed;
+	border: 1px solid;
 }
 
 .nav > li {
 	display: table-cell;
-	/*width: 10%;*/
-	background: orange;
-	border: 1px solid;
-	padding: 2rem;
+	width: 20%;
+	background: goldenrod;
+	list-style: none;
 	position: relative;
+	border: 1px solid #444;
+	border-right: none;
+	text-align: center;
+	cursor: pointer;
 }
 
-.nav > li > ul {
-	position: absolute;
+.nav > li:nth-last-child(1) {
+	border-right: 1px solid #444;
+}
+
+.nav li > ul {
+	display: none;
 	width: 100%;
-	background: orangered;
+	position: absolute;
 	list-style: none;
-	padding: 0;
-	margin: 0;
+	background: #ffe;
+	border: 1px solid #444;
+	text-align: left;
 	top: 100%;
 	left: 0;
-	border: 1px solid;
-	display: none;
+	margin: 0;
+	padding: 0;
 }
 
-.nav > li:hover ul {
-	display: block;
+.nav li > ul > li {
+	padding: 1rem;
 }
 
-.nav li ul li {
-	border: 1px solid;
-	padding: 2rem;
+.nav li:hover ul {
+	display: table;
+	border-bottom: 1px solid #444;
+
 }
+
+
