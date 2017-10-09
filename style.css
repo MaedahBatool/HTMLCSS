@@ -6,6 +6,12 @@
  * @since 1.0.0
  */
 
+/**
+ * 1. Strucuture
+ * 2. Navigation
+ */
+
+/* Strucuture. */
 * {
 	box-sizing: border-box;
 }
@@ -32,6 +38,7 @@ a:hover {
 	cursor: pointer !important;
 }
 
+/* Navigation. */
 .nav {
 	display: table;
 	width: 100%;
