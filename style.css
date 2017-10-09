@@ -1,5 +1,9 @@
 /**
- * CSS Styles for the Navigation Menu
+ * Stylesheet
+ *
+ * Main styles for the site.
+ *
+ * @since 1.0.0
  */
 
 * {
@@ -77,5 +81,3 @@ a:hover {
 	border-bottom: 1px solid #444;
 
 }
-
-
